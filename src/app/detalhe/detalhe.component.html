@@ -1,0 +1,23 @@
+<div *ngIf="alerta">
+	<hr>
+	<h3>Detalhes do alerta</h3>
+	<div>
+		<span>Ponto de venda: </span> {{alerta.pontoDeVenda}}
+	</div>
+	<div>
+		<span>Descrição: </span> {{alerta.descricao}}
+	</div>
+	<div *ngIf="alerta.respondidaEm">
+		<span>Respondida em: </span> {{alerta.respondidaEm | date:'dd/MM/yyyy HH:mm:ss'}}
+	</div>
+	<div *ngIf="alerta.produto">
+		<span>Produto: </span> {{alerta.produto}}
+	</div>
+	<div *ngIf="alerta.categoria">
+		<span>Categoria: </span> {{alerta.categoria}}
+	</div>
+	<div *ngIf="alerta.margem">
+		<span>Margem: </span> {{alerta.margem}}
+	</div>
+	<hr>
+</div>

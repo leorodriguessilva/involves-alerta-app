@@ -1,0 +1,15 @@
+<div *ngIf="alertas">
+	<app-detalhe 
+	[alerta]="alertaSelecionado"
+	></app-detalhe>
+	<ul class="alertas">
+		<li *ngFor="let alerta of alertas 
+		| filtropontodevenda:pontoDeVenda
+		| filtrotipo:tipo"
+		(click)="selecionaAlerta(alerta)"
+		[class.selecionado]="estaSelecionado(alerta)">
+			<span class="itemLista">Alerta: </span> 
+			{{getNome(alerta)}} - {{alerta.descricao}}
+		</li>
+	</ul>
+</div>

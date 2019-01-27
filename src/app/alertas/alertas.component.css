@@ -1,0 +1,43 @@
+.alertas li {
+  list-style-type: none;
+  border: 1px;
+  width: 95%;
+  background-color: #d1e0e0;
+  border-radius: 8px;
+  color: #455;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+}
+
+.alertas li:hover {
+  background-color: #c2d6d6;
+}
+
+.alertas li:active  {
+  background-color: #a3c2c2;
+}
+
+.selecionado {
+  background-color: #b3cccc !important;
+  color: white;
+}
+
+.itemLista {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 8px 0 8px 0;
+}

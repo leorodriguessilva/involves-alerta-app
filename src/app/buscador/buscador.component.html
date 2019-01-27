@@ -1,0 +1,14 @@
+<label>Ponto de venda: 
+	<input id="pontoDeVenda"
+	[(ngModel)]="pontoDeVenda" 
+	placeholder="Ponto de venda"/>
+</label>
+<label>Tipo: 
+	<input id="tipo"
+	[(ngModel)]="tipo" 
+	placeholder="Tipo"/>
+</label>
+<app-alertas 
+[pontoDeVenda]="pontoDeVenda"
+[tipo]="tipo"
+></app-alertas>
